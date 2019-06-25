@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import theme from '../../assets/styles/theme';
 
-const Container = styled.div`
+const Container = styled(Link)`
     justify-self: center;
     display: flex;
     flex-direction: column;
@@ -11,9 +12,12 @@ const Container = styled.div`
     text-align: center;
     padding: 15px 30px;
     margin-bottom: 15px;
+    color: ${theme.red};
     background: ${theme.darkYellow};
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+
     transition: background .1s ease-in, color .1s ease-in;
 
     :hover {
@@ -25,6 +29,10 @@ const Container = styled.div`
         width: 100%;
         margin: 0;
     }
+`;
+
+const StyledImage = styled.img`
+    width: 100%;
 `;
 
 const StyledName = styled.h4`
@@ -40,10 +48,10 @@ const StyledSuperType = styled.h5`
 
 class PokemonItem extends React.Component {
     render() {
-        const { imageSrc, name, superType } = this.props;
+        const { id, imageSrc, name, superType } = this.props;
         return (
-            <Container>
-                <img src={imageSrc} alt={name}/>
+            <Container to={{pathname: `/details/${id}`, state: { show: true }}}>
+                <StyledImage src={imageSrc} alt={name}/>
                 <div>
                     <StyledName>{name}</StyledName>
                     <StyledSuperType>{superType}</StyledSuperType>

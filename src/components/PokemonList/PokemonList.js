@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import theme from '../../assets/styles/theme';
 
 import PokemonItem from '../PokemonItem/PokemonItem';
-import Pokeball from '../../assets/images/pokeball.svg'
+import Pokeball from '../../assets/images/pokeball.svg';
 
 const Container = styled.div`
     padding-top: 15px;
@@ -50,7 +50,7 @@ class PokemonList extends React.Component {
         return (
             <Container>
                 <InfiniteScroll
-                    loadMore={this.props.fetchPokemons}
+                    loadMore={() => this.props.fetchPokemons(this.props.page)}
                     hasMore={this.props.pokemons.length < this.props.maxItems}
                     loader={
                         <Loader key={0}>
@@ -62,9 +62,11 @@ class PokemonList extends React.Component {
                         {this.props.pokemons.map(item => 
                             <PokemonItem 
                                 key={item.id} 
+                                id={item.id}
                                 imageSrc={item.imageUrl} 
                                 name={item.name} 
                                 superType={item.supertype}
+                                handleClick={() => this.showModal(item.id)}
                             />
                         )} 
                     </ItemsContainer>
@@ -79,12 +81,14 @@ PokemonList.propTypes = {
     fetchPokemonDetails: PropTypes.func.isRequired,
     pokemons: PropTypes.array.isRequired,
     maxItems: PropTypes.number.isRequired,
+    page: PropTypes.number.isRequired,
     pokemonDetails: PropTypes.object.isRequired
 }
 
 const mapStateToProps = state => ({
     pokemons: state.items.pokemons,
     maxItems: state.items.maxItems,
+    page: state.items.page,
     pokemonDetails: state.itemDetails,
 });
 
