@@ -16,8 +16,8 @@ const App = () => {
             <BrowserRouter basename={process.env.PUBLIC_URL}>
               <Header/>
               <Switch>
-                <Route path="/details/:id" render={(props) => <><Modal match={props.match}/><PokemonList/></>} />
-                <Route path="*" component={PokemonList} />
+                <Route path="/" exact component={PokemonList} />
+                <Route path="/details/:id" render={(props) => <><Modal match={props.match} history={props.history}/><PokemonList/></>} />
               </Switch>
             </BrowserRouter>
           </Provider>
