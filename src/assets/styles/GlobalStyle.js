@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -13,8 +14,11 @@ const GlobalStyle = createGlobalStyle`
   
   body {
     font-size: 1.6rem;
+    font-family: ${theme.font.family.montserrat};
     margin: 0;
     letter-spacing: 1.02px;
+    background: ${theme.yellow};
+    color: ${theme.red};
   }
 `;
 
