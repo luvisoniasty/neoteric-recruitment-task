@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/neoteric-recruitment-task/static/js/main.6e977730.chunk.js",
-    "main.js.map": "/neoteric-recruitment-task/static/js/main.6e977730.chunk.js.map",
-    "runtime~main.js": "/neoteric-recruitment-task/static/js/runtime~main.baac5a4f.js",
-    "runtime~main.js.map": "/neoteric-recruitment-task/static/js/runtime~main.baac5a4f.js.map",
-    "static/js/2.c59e0196.chunk.js": "/neoteric-recruitment-task/static/js/2.c59e0196.chunk.js",
-    "static/js/2.c59e0196.chunk.js.map": "/neoteric-recruitment-task/static/js/2.c59e0196.chunk.js.map",
-    "index.html": "/neoteric-recruitment-task/index.html",
-    "precache-manifest.c48adcb02816d056497b57a02530646a.js": "/neoteric-recruitment-task/precache-manifest.c48adcb02816d056497b57a02530646a.js",
-    "service-worker.js": "/neoteric-recruitment-task/service-worker.js",
-    "static/media/pokeball.svg": "/neoteric-recruitment-task/static/media/pokeball.2b4798f5.svg"
+    "main.js": "/Neoteric-recruitment-task/static/js/main.a4f54efa.chunk.js",
+    "main.js.map": "/Neoteric-recruitment-task/static/js/main.a4f54efa.chunk.js.map",
+    "runtime~main.js": "/Neoteric-recruitment-task/static/js/runtime~main.e8851422.js",
+    "runtime~main.js.map": "/Neoteric-recruitment-task/static/js/runtime~main.e8851422.js.map",
+    "static/js/2.b6b5c1e3.chunk.js": "/Neoteric-recruitment-task/static/js/2.b6b5c1e3.chunk.js",
+    "static/js/2.b6b5c1e3.chunk.js.map": "/Neoteric-recruitment-task/static/js/2.b6b5c1e3.chunk.js.map",
+    "index.html": "/Neoteric-recruitment-task/index.html",
+    "precache-manifest.f592602767d5d1c05518435f2baceb70.js": "/Neoteric-recruitment-task/precache-manifest.f592602767d5d1c05518435f2baceb70.js",
+    "service-worker.js": "/Neoteric-recruitment-task/service-worker.js",
+    "static/media/pokeball.svg": "/Neoteric-recruitment-task/static/media/pokeball.2b4798f5.svg"
   }
 }
