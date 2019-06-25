@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "becf73d43dadf525f26ea59412fe15d1",
+    "revision": "677e11781641f017f589fe67c2374e43",
     "url": "/neoteric-recruitment-task/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/neoteric-recruitment-task/static/js/2.c59e0196.chunk.js"
   },
   {
-    "revision": "5eb3c350d39b3d8e10c3",
-    "url": "/neoteric-recruitment-task/static/js/main.0e779261.chunk.js"
+    "revision": "f0d67b9a613cc1031fab",
+    "url": "/neoteric-recruitment-task/static/js/main.6e977730.chunk.js"
   },
   {
     "revision": "b09a0178b397d2b4cd30",

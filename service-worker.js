@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/neoteric-recruitment-task/precache-manifest.4008881ed5241fa201213c40e25efa36.js"
+  "/neoteric-recruitment-task/precache-manifest.c48adcb02816d056497b57a02530646a.js"
 );
 
 self.addEventListener('message', (event) => {
